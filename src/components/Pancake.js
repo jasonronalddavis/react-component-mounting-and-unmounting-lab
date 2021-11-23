@@ -58,6 +58,8 @@ class Pancake extends React.Component {
     const { id } = this.props;
     let status = this.getPancakeStatus();
     this.props.takeItOff(id, status);
+    console.log(status);
+    console.log(this);
   };
 
   render() {
@@ -87,3 +89,4 @@ class Pancake extends React.Component {
 }
 
 export default Pancake;
+
